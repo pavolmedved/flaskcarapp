@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+
+<div class="card-deck">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517994112540-009c47ea476b" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Recognizes by his peers as reliable and efficient</p>
+            <p class="card-text"><small class="text-muted">Nathaniel Young is a seasoned retailer with a long history of client satisfaction and retention.</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1471289549423-04adaecfa1f1" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">We have a wide variety of used cars!</p>
+            <p class="card-text"><small class="text-muted">If you are in the market for a used car, our wide selection will fit any need!</small></p>
+            <a class="btn btn-primary" href="{{ url_for('about') }}" role="button">About Us</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">We also have a great selection of rental cars!</p>
+            <p class="card-text"><small class="text-muted">A daily rental car fit the needs of your family better, we're here to help!</small></p>
+            <a class="btn btn-primary" href="{{ url_for('post') }}" role="button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Login Form:</h1>
+
+<form action="" method="POST">
+        <div class="form-group">
+            <fieldset>
+                <label for="exampleInputEmail">Email address</label>
+                {{ form.email(class="form-control")}}
+                    
+            </fieldset>
+            <fieldset>
+                <label for="exampleInputPassword">Password</label>
+                {{ form.password(class="form-control")}}
+                    
+            </fieldset>
+            <fieldset>
+                {{ form.submit(class="btn btn-primary")}}
+                    
+            </fieldset>
+
+
+
+        </div>
+
+         
+</form>
+
+{% endblock content %}
